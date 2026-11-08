@@ -1,0 +1,11 @@
+replicaCount: 2
+
+image:
+  repository: srikantheggoju/enterprise-app
+  tag: "2"
+  pullPolicy: Always
+
+service:
+  type: NodePort
+  port: 80
+  targetPort: 5000
